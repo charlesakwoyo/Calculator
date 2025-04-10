@@ -9,32 +9,34 @@
 </head>
 <body>
     <div class="Calculator">
-        <h2>Calculator - Charles Akwoyo ( Adm 250109)</h>
-        <form id="calculator-form">
-            <input type="text" id="input" placeholder="Enter expression" required>
-            <button type="submit">Calculate</button>
-        </form>
+        <h2>Calculator - Charles Akwoyo (Adm 250109)</h2>
+    <!--display area-->
+        <div class="display-area">
+            <h3>Simple Calculator</h3>
+        <input type="text" id="input" placeholder="Enter expression" readonly>
         <div id="result"></div>
+        
+    <!--buttons-->
+        <div class="buttons">
+            <button onclick="cleardisplay()">C</button>
+            <button onclick="backspace()">Backspace</button>
+            <button onclick="appendValue('/')">/</button>
+            <button onclick="appendValue('*')">*</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('=')">=</button>
+            <button onclick="appendValue('0')" style="grid-column: span 2;">0</button>
+            <button onclick="appendValue('.')">.</button>
+        </div>
     </div>
-    <button onclick="cleardisplay()">C</button>
-    <button onclick="backspace()">Backspace</button>
-    <button onclick="appendValue('/')">/</button>
-    <button onclick="appendValue('*')">*</button>
-    <button onclick="appendValue('-')">-</button>
-    <button onclick="appendValue('+')">+</button>
-    <button onclick="appendValue('1')">1</button>
-    <button onclick="appendValue('2')">2</button>
-    <button onclick="appendValue('3')">3</button>
-    <button onclick="appendValue('4')">4</button>
-    <button onclick="appendValue('5')">5</button>
-    <button onclick="appendValue('6')">6</button>
-    <button onclick="appendValue('7')">7</button>
-    <button onclick="appendValue('8')">8</button>
-    <button onclick="appendValue('9')">9</button>
-    <button onclick="appendValue('0')">0</button>
-    <button onclick="appendValue('=')">=</button>
-
-
-    
 </body>
 </html>
